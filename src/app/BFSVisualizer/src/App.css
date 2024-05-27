@@ -1,8 +1,14 @@
 .App {
   text-align: center;
-  padding-top: 100px;
-  background-color: gray;
-  height: 100vh;
+  padding-top: 15px;
+  margin-top: 2px;
+  padding-left: 10%;
+  /* margin-left: 50%; */
+  /* background: red; */
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+  /* height: 75vh; */
 }
 
 button {
@@ -11,10 +17,12 @@ button {
   width: 100px;
   height: 40px;
   color: white;
-  margin-top: 30px;
+  margin-bottom:-60px;
+  margin-top: 20px;
 }
 
 .react-flow__renderer {
-  height: 550px !important;
+  padding-left: 50% !important;
+  height: 385px !important;
   position: relative !important;
 }

@@ -10,9 +10,9 @@ import * as types from "../redux/types";
 const BFS = ({ traverse }) => {
   const [bfsInstance, setBfsInstance] = useState();
   const dispatch = useDispatch();
-
+  const FIND="I"
   const initialize = () => {
-    const newBfs = bfs(graph, "A", "H");
+    const newBfs = bfs(graph, "A", FIND);
     setBfsInstance(newBfs);
     dispatch({ type: types.RESET });
   };
@@ -36,7 +36,7 @@ const BFS = ({ traverse }) => {
         <button onClick={initialize}>Reset</button>
       </div>
       <p>
-        {traverse.found ? `Found H in ${traverse.steps} steps` : traverse.steps}
+        {traverse.found ? `Found ${FIND} in ${traverse.steps} steps` : traverse.steps}
       </p>
     </div>
   );
