@@ -7,8 +7,8 @@ const Navbar = () => {
     ">
       <div className="navbar bg-base-100 text-white">
         <div className="flex-1">
-          <Link href="/" className="btn btn-ghost text-xl">
-            Graph Project
+          <Link href="/" className="btn btn-ghost text-xl underline">
+          An Approach Towards Understanding Various Aspects  Of Graph In Real Life
           </Link>
         </div>
         <div className="flex-none gap-2">
